@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Resume";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Resume</h1>
+</div>
+<div class="text-center">
+    @*Education*@
+    <h2>Education</h2>
+    <div class="resume-content">
+        <div class="resume-logo">Logo</div>
+        <div class="resume-info">
+            <p class="title">Seneca College</p>
+            <p class="location-time">Toronto, ON | Jan 2021 – Present</p>
+            <ul class="description-list">
+                <li>Computer Programming and Analysis Diploma</li>
+            </ul>
+        </div>
+    </div>
+    <div class="resume-content">
+        <div class="resume-logo">Logo</div>
+        <div class="resume-info">
+            <p class="title">York University, Schulich School of Business</p>
+            <p class="location-time">Toronto, ON | Sep 2018 – Oct 2019</p>
+            <ul class="description-list">
+                <li>Master of Management</li>
+            </ul>
+        </div>
+    </div>
+    <div class="resume-content">
+        <div class="resume-logo">Logo</div>
+        <div class="resume-info">
+            <p class="title">University of Toronto</p>
+            <p class="location-time">Toronto, ON | Sep 2013 – Jun 2018</p>
+            <ul class="description-list">
+                <li>Honours Bachelor of Science</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    @*Experience*@
+    <h2>Experience</h2>
+    <div class="resume-content">
+        <div class="resume-logo">Logo</div>
+        <div class="resume-info">
+            <p class="title">Alpha Labs</p>
+            <p class="location-time">Toronto, ON | Dec 2021 - Present</p>
+            <ul class="description-list">
+                <li>description1</li>
+                <li>description2</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    @*Certifications*@
+    <h2>Certifications</h2>
+    <div class="resume-content">
+        <div class="resume-logo">Logo</div>
+        <div class="resume-info">
+            <p class="title">APICS</p>
+            <p class="location-time">Feb 2021 – Feb 2026</p>
+            <ul class="description-list">
+                <li>Certified Supply Chain Professional (CSCP)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .resume-content {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .resume-logo {
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    .resume-info {
+        width: 500px;
+        text-align: left;
+        margin-left: 100px;
+    }
+</style>
