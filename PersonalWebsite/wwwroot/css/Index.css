@@ -1,16 +1,30 @@
 ﻿.keyword {
     font-size: 40px;
+    margin: 0 10px;
+}
+
+.intro-container p {
+    margin: 0;
 }
 
 .picture-container {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .profile-picture {
     width: 100%;
     height: 650px;
     object-fit: cover;
+}
+
+.link-container {
+    margin: 70px 0 60px 0;
+}
+
+.link-container > h2 {
+    margin-bottom: 30px;
 }
 
 .links {

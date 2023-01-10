@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PersonalWebsite</title>
+    <title>@ViewData["Title"] - Yoon Song</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PersonalWebsite.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Index.css" />
     <link rel="stylesheet" href="~/css/resume.css" />
-    <link rel="stylesheet" href="~/PersonalWebsite.styles.css" asp-append-version="true" />
+
     <!-- Font awesome -->
     <link href="~/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet" />
     <link href="~/fontawesome-free-6.2.1-web/css/brands.min.css" rel="stylesheet" />
@@ -47,7 +48,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container text-center">
-            &copy; 2022 - Yoon Song
+            &copy; @(DateTime.Now.Year) - Yoon Song
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

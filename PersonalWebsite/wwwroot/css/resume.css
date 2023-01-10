@@ -1,16 +1,36 @@
-﻿.resume-content {
+﻿
+.resume-section {
+    margin-bottom: 80px;
+}
+
+    .resume-section > h2 {
+        margin-bottom: 40px;
+    }
+
+.resume-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 .resume-logo {
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .resume-info {
     width: 500px;
-    text-align: left;
-    margin-left: 100px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.resume-logo > img {
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
 }
