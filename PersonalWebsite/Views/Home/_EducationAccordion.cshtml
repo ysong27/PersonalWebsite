@@ -17,18 +17,17 @@
             </button>
         </div>
         <div id="flush-collapse-Edu-@Model.Id" class="accordion-collapse collapse" aria-labelledby="flush-heading-Edu-@Model.Id" data-bs-parent="#accordionFlushEdu-@Model.Id">
-                @if (Model.Descriptions.Count > 0) {
+            @if (Model.Descriptions.Count > 0)
+            {
                 <div class="accordion-body">
-
                     <ul>
-                        @foreach (string description in Model.Descriptions) 
+                        @foreach (string description in Model.Descriptions)
                         {
                             <li>@description</li>
                         }
                     </ul>
                 </div>
-
-                }
+            }
         </div>
     </div>
 </div>
