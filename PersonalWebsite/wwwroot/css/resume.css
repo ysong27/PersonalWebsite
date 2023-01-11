@@ -35,3 +35,12 @@
     height: 100px;
     object-fit: contain;
 }
+
+.resume-section .accordion-flush {
+    display: flex;
+    justify-content: center;
+}
+
+.resume-section .accordion-item {
+    max-width: 800px;
+}

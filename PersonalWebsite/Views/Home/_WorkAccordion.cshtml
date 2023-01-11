@@ -1,0 +1,33 @@
+﻿@model Work
+
+
+<div class="accordion accordion-flush" id="accordionFlushWork-@Model.Id">
+    <div class="accordion-item">
+        <div class="accordion-header" id="flush-heading-Work-@Model.Id">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-Work-@Model.Id" aria-expanded="false" aria-controls="flush-collapse-Work-@Model.Id">
+                <div class="resume-content row">
+                    <div class="resume-logo col-md-4">
+                        <img src="~/images/@Model.ImageFileName" />
+                    </div>
+                    <div class="resume-info col-md-8">
+                        <p class="title">@Model.Title</p>
+                        <p class="location-time">@Model.City, @Model.Province | @Model.FromDate.ToString("MMM yyyy") – @(Model.ToDate.ToString("MMM yyyy") == DateTime.Now.ToString("MMM yyyy") ? "Present" : Model.ToDate.ToString("MMM yyyy"))</p>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div id="flush-collapse-Work-@Model.Id" class="accordion-collapse collapse" aria-labelledby="flush-heading-Work-@Model.Id" data-bs-parent="#accordionFlushWork-@Model.Id">
+            @if (Model.Descriptions.Count > 0)
+            {
+                <div class="accordion-body">
+                    <ul>
+                        @foreach (string description in Model.Descriptions)
+                        {
+                            <li>@description</li>
+                        }
+                    </ul>
+                </div>
+            }
+        </div>
+    </div>
+</div>
